@@ -7,6 +7,20 @@ choices = []
 
 for x in range (0, 9) :
     choices.append(str(x + 1))
+    print("Lets play Tic-Tac-Toe!")
+player_1_pick = ""
+player_2_pick = ""
+player_1 = input("Enter a name for player 1 and press enter, leave blank to leave as Player 1: ")
+player_2 = input("Enter a name for player 2 and press enter, leave blank to leave as Player 2: ")
+
+
+if (player_1 == "" or player_2 == ""):
+  if (player_1 == ""):
+    player_1 = "Player 1"
+  if (player_2 == ""):
+    player_2 = "Player 2"
+else:
+  pass
 
 playerOneTurn = True
 winner = False
@@ -24,10 +38,9 @@ while not winner :
     printBoard()
 
     if playerOneTurn :
-        print( "Player 1:")
+        print( player_1 )
     else :
-        print( "Player 2:")
-
+        print( player_2 )
     try:
         choice = int(input(">> "))
     except:
