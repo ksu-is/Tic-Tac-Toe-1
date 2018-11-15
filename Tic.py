@@ -37,11 +37,10 @@ while not winner :
         print("illegal move, plase try again")
         continue
 
-    if playerOneTurn:
-    
-        choices[choice - 1] = 'X'
+    if playerOneTurn
+        choices[choice - 1] = 'x'
     else :
-        choices[choice - 1] = 'O'
+        choices[choice - 1] = 'o'
 
     playerOneTurn = not playerOneTurn
 
@@ -59,4 +58,4 @@ while not winner :
         winner = True
         printBoard()
 
-print ("Player " + str(int(playerOneTurn + 1)) + " Congratulations on your win!\n")
+print ("Player " + str(int(playerOneTurn + 1)) + " wins!\n")
