@@ -47,7 +47,7 @@ while not winner :
         print("please enter a valid field")
         continue
     if choices[choice - 1] == 'X' or choices [choice-1] == 'O':
-        print("illegal move, plase try again")
+        print("illegal move, please try again")
         continue
 
     if playerOneTurn:
@@ -72,4 +72,4 @@ while not winner :
         winner = True
         printBoard()
 
-print ("Player " + str(int(playerOneTurn + 1)) + " Congratulations on your win!\n")
+print ("Player " + str(int(playerOneTurn + 1)) + " You Won !!!!!!!!!!!!WON!!!!!!!!!\n")
