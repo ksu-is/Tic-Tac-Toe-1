@@ -52,9 +52,9 @@ while not winner :
 
     if playerOneTurn:
     
-        choices[choice - 1] = 'X'
+        choices[choice - 1] = '@'
     else :
-        choices[choice - 1] = 'O'
+        choices[choice - 1] = '%'
 
     playerOneTurn = not playerOneTurn
 
