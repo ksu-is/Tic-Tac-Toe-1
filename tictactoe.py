@@ -8,17 +8,17 @@ choices = []
 for x in range (0, 9) :
     choices.append(str(x + 1))
     print("Lets play Tic-Tac-Toe!")
-player_1_pick = ""
-player_2_pick = ""
-player_1 = input("Enter a name for player 1 and press enter, leave blank to leave as Player 1: ")
-player_2 = input("Enter a name for player 2 and press enter, leave blank to leave as Player 2: ")
+Challenger_1_pick = ""
+Challenger_2_pick = ""
+Challenger_1 = input("Enter a name for Challenger 1 and press enter, leave blank to leave as Challenger 1: ")
+Challenger_2 = input("Enter a name for Challenger 2 and press enter, leave blank to leave as Challenger 2: ")
 
 
-if (player_1 == "" or player_2 == ""):
-  if (player_1 == ""):
-    player_1 = "Player 1"
-  if (player_2 == ""):
-    player_2 = "Player 2"
+if (Challenger_1 == "" or Challenger_2 == ""):
+  if (Challenger_1 == ""):
+    Challenger_1 = "Challenger 1"
+  if (Challenger_2 == ""):
+   Challenger_2 = "Challenger 2"
 else:
   pass
 
@@ -38,9 +38,9 @@ while not winner :
     printBoard()
 
     if playerOneTurn :
-        print( player_1 )
+        print( Challenger_1 )
     else :
-        print( player_2 )
+        print( Challenger_2 )
     try:
         choice = int(input(">> "))
     except:
@@ -72,4 +72,4 @@ while not winner :
         winner = True
         printBoard()
 
-print ("Player " + str(int(playerOneTurn + 1)) + " You Won !!!!!!!!!!!!WON!!!!!!!!!\n")
+print ("Challenger " + str(int(playerOneTurn + 1)) + " You Won !!!!!!!!!!!!WON!!!!!!!!!\n")
